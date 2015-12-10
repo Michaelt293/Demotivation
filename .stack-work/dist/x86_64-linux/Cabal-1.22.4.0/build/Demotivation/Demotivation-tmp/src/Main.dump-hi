@@ -1,0 +1,355 @@
+
+==================== FINAL INTERFACE ====================
+2015-12-09 07:32:42.612546 UTC
+
+interface main@main:Main 7102
+  interface hash: 0e7de01997217dbe545040b08e14316f
+  ABI hash: 7930d2efd9d421396ed2d9d889d34c10
+  export-list hash: 9ccd9c1c5483d28c0ed9873a2417aa8c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1182b3fd40f39a62c57f64fa2bb45cde
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.letterScores
+  Main.main
+  Main.score100
+  Main.wordScore
+  Main.Score
+  Main.WordString
+module dependencies:
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0* binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy integer-gmp-1.0.0.0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a*
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:Data.OldList 21f46c368c20a00483b41333e53a55cb
+import  -/  base-4.8.1.0:Data.Traversable 89769555cf5e62f4edd3d085405c2caa
+import  -/  base-4.8.1.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.List f31ed8784b3e05f1397195751f7d74ea
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.Environment 946ddc2d7c48138bb213316abaff2a8d
+import  -/  base-4.8.1.0:System.IO d541b8bdf18c04de3ab7ea0277c4eba3
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base b18abd392226ad3cff90ff4f8c97372c
+import  -/  unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Strict dc75ba42dd086144c55668c57600b891
+06ae38192c83cb55bae6ab08c8b6b5bc
+  $w$s$wupdateOrSnocWith ::
+    (v -> v -> v)
+    -> GHC.Prim.Char#
+    -> v
+    -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v)
+    -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v)
+  {- Arity: 4, Strictness: <L,C(C1(U))><L,U><L,U><S,U>, Inline: [0],
+     Unfolding: (\ @ v
+                   w :: v -> v -> v
+                   ww :: GHC.Prim.Char#
+                   w1 :: v
+                   w2 :: GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v) ->
+                 letrec {
+                   $wgo1 :: GHC.Prim.Char#
+                            -> v
+                            -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                            -> GHC.Prim.Int#
+                            -> GHC.Prim.Int#
+                            -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                     {- Arity: 5, Strictness: <L,U><L,U><S,U><L,U><L,U>, Inline: [0] -}
+                   = \ ww1 :: GHC.Prim.Char#
+                       w3 :: v
+                       ww2 :: GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                       ww3 :: GHC.Prim.Int#
+                       ww4 :: GHC.Prim.Int# ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.>=# ww3 ww4) of wild {
+                       GHC.Types.False
+                       -> case GHC.Prim.indexArray#
+                                 @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                 ww2
+                                 ww3 of ds { (##) ipv3 ->
+                          case ipv3 of wild1 { Data.HashMap.Base.L kx y ->
+                          case kx of wild2 { GHC.Types.C# c2 ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.eqChar# ww1 c2) of wild3 {
+                            GHC.Types.False -> $wgo1 ww1 w3 ww2 (GHC.Prim.+# ww3 1) ww4
+                            GHC.Types.True
+                            -> case GHC.Prim.thawArray#
+                                      @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                      @ GHC.Prim.RealWorld
+                                      ww2
+                                      0
+                                      (GHC.Prim.sizeofArray#
+                                         @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                         ww2)
+                                      GHC.Prim.realWorld# of ds1 { (#,#) ipv4 ipv5 ->
+                               case GHC.Prim.writeArray#
+                                      @ GHC.Prim.RealWorld
+                                      @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                      ipv5
+                                      ww3
+                                      (Data.HashMap.Base.L
+                                         @ GHC.Types.Char
+                                         @ v
+                                         (GHC.Types.C# ww1)
+                                         (w w3 y))
+                                      ipv4 of s' { DEFAULT ->
+                               case GHC.Prim.unsafeFreezeArray#
+                                      @ GHC.Prim.RealWorld
+                                      @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                      ipv5
+                                      s' of ds2 { (#,#) ipv6 ipv7 ->
+                               ipv7 } } } } } } }
+                       GHC.Types.True
+                       -> case GHC.Prim.newArray#
+                                 @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                 @ GHC.Prim.RealWorld
+                                 (GHC.Prim.+# ww4 1)
+                                 (Data.HashMap.Array.undefinedElem
+                                    @ (Data.HashMap.Base.Leaf GHC.Types.Char v))
+                                 GHC.Prim.realWorld# of ds { (#,#) ipv3 ipv4 ->
+                          case GHC.Prim.copyArray#
+                                 @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                 @ GHC.Prim.RealWorld
+                                 ww2
+                                 0
+                                 ipv4
+                                 0
+                                 ww4
+                                 ipv3 of s2 { DEFAULT ->
+                          case GHC.Prim.writeArray#
+                                 @ GHC.Prim.RealWorld
+                                 @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                 ipv4
+                                 ww4
+                                 (Data.HashMap.Base.L @ GHC.Types.Char @ v (GHC.Types.C# ww1) w3)
+                                 s2 of s' { DEFAULT ->
+                          case GHC.Prim.unsafeFreezeArray#
+                                 @ GHC.Prim.RealWorld
+                                 @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                                 ipv4
+                                 s' of ds1 { (#,#) ipv5 ipv6 ->
+                          ipv6 } } } } }
+                 } in
+                 $wgo1
+                   ww
+                   w1
+                   w2
+                   0
+                   (GHC.Prim.sizeofArray#
+                      @ (Data.HashMap.Base.Leaf GHC.Types.Char v)
+                      w2)) -}
+5e8be811e8cede74c15503ebed55c4b8
+  $wa ::
+    GHC.Prim.Word#
+    -> GHC.Prim.Char#
+    -> v
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap GHC.Types.Char v
+    -> GHC.Prim.State# s
+    -> (# GHC.Prim.State# s,
+          Data.HashMap.Base.HashMap GHC.Types.Char v #)
+  {- Arity: 6, Strictness: <L,U><L,U><L,U><L,U><S,1*U><L,U>,
+     Inline: [0] -}
+039995305f076061569fa26441df0d8e
+  $wgo :: [Main.Score] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+112550cc8a2c3c2570666d0e796c15f0
+  $wpoly_go ::
+    GHC.Prim.Char#
+    -> GHC.Prim.Array# (Data.HashMap.Base.Leaf GHC.Types.Char v)
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe v
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><S,U><L,U><L,U>,
+     Inline: [0] -}
+b879815d83384195c22f7c3c85d9069f
+  $wpoly_go1 ::
+    GHC.Prim.Word#
+    -> GHC.Prim.Char#
+    -> GHC.Prim.Int#
+    -> Data.HashMap.Base.HashMap GHC.Types.Char v
+    -> GHC.Base.Maybe v
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+2708c8f61b5e86fc460031522a88bbb2
+  type Score = GHC.Types.Int
+6b5fa8fdd0fee596bcfe23fa1c9b74ad
+  type WordString = GHC.Base.String
+e11b13a7a77b3a332c6d660c42c44c88
+  letterScores :: Data.HashMap.Base.HashMap GHC.Types.Char Main.Score
+  {- Unfolding: (Main.letterScores_go
+                   97
+                   Main.letterScores1
+                   (Data.HashMap.Base.Empty @ GHC.Types.Char @ GHC.Types.Int)) -}
+f88ff546a858f4ce467d69855d83d0ce
+  letterScores1 :: [GHC.Types.Int]
+  {- Unfolding: (GHC.Enum.eftInt 1 9223372036854775807) -}
+176f93a9c54efa03c79f022e3cfc9e0b
+  letterScores_go ::
+    GHC.Prim.Int#
+    -> [GHC.Types.Int]
+    -> Data.HashMap.Base.HashMap GHC.Types.Char GHC.Types.Int
+    -> Data.HashMap.Base.HashMap GHC.Types.Char GHC.Types.Int
+  {- Arity: 3, Strictness: <L,U><L,1*U><S,1*U> -}
+c4e86c623c2f1354ce30db8809075c8c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+57e3d617869041e137f34dda1d4bbaa2
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Environment.getArgs1 s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   []
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ ()
+                        Main.main3
+                        ipv
+                   : filePath ds
+                   -> case GHC.IO.Handle.FD.openFile1
+                             filePath
+                             GHC.IO.IOMode.ReadMode
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.IO.Handle.Text.hGetContents1
+                             ipv3
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      let {
+                        words100Score :: [Main.WordString]
+                        = let {
+                            wordList :: [GHC.Base.String] = Data.OldList.words ipv5
+                          } in
+                          Main.main_go
+                            wordList
+                            (GHC.Base.map
+                               @ [GHC.Types.Char]
+                               @ (GHC.Base.Maybe Main.Score)
+                               Main.wordScore
+                               wordList)
+                      } in
+                      case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             (GHC.CString.unpackAppendCString#
+                                "Number of words with a score of 100: "#
+                                (case GHC.List.$wlenAcc
+                                        @ [GHC.Types.Char]
+                                        words100Score
+                                        0 of ww2 { DEFAULT ->
+                                 case GHC.Show.$wshowSignedInt
+                                        0
+                                        ww2
+                                        (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                             GHC.Types.True
+                             ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      case GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             Main.main2
+                             GHC.Types.True
+                             ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                      GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.Show.$fShow[]_$s$cshow2 words100Score)
+                        GHC.Types.True
+                        ipv8 } } } } } }) -}
+c159ca6e2349ae2cd1be3aaae9b0ed41
+  main2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Words with a score of 100:"#) -}
+a841fabc2560f476499104bf53c4a61d
+  main3 :: GHC.Exception.SomeException
+  {- Unfolding: (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                   Main.main4) -}
+fa40481d8f7ab7ba3f06d72eb4c78a0f
+  main4 :: GHC.IO.Exception.IOException
+  {- Unfolding: (GHC.IO.Exception.IOError
+                   (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                   GHC.IO.Exception.UserError
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Main.main5
+                   (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                   (GHC.Base.Nothing @ GHC.IO.FilePath)) -}
+06a0ece5639451b5b226bd4d68f73693
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Pattern match failure in do expression at src/Main.hs:20:5-16"#) -}
+0da0d59d69ae7b984adf35ccee55d464
+  main6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+04d715fefc53b2121038eefa31410e58
+  main_go ::
+    [[GHC.Types.Char]]
+    -> [GHC.Base.Maybe Main.Score] -> [[GHC.Types.Char]]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+e999399a355bca7db244c492b7bdaac5
+  score100 ::
+    [(Main.WordString, GHC.Base.Maybe Main.Score)] -> [Main.WordString]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ l :: [(Main.WordString,
+                          GHC.Base.Maybe Main.Score)] ->
+                 Main.score100_go l) -}
+e1beffd7df4fcd20335520cef3fa4f40
+  score100_go ::
+    [(Main.WordString, GHC.Base.Maybe Main.Score)]
+    -> [[GHC.Types.Char]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+a99a5c372599102aa430acb529c702d8
+  wordScore :: Main.WordString -> GHC.Base.Maybe Main.Score
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ w :: Main.WordString ->
+                 case Main.wordScore_go w of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ Main.Score
+                   GHC.Base.Just a1
+                   -> GHC.Base.Just
+                        @ Main.Score
+                        (case Main.$wgo a1 0 of ww { DEFAULT -> GHC.Types.I# ww }) }) -}
+f31f9df9ad448af646df8f754491cf96
+  wordScore_go :: [GHC.Types.Char] -> GHC.Base.Maybe [Main.Score]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
